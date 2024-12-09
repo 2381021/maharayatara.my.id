@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bible Characters Final</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/695ad4d856.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="favicon_nothiung.png">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'nothing-blue': '#00285c',
+                        'nothing-dark': '#111',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="m-0 p-0">
+    <header class="fixed top-0 w-full bg-white z-[1000] shadow-md" style="font-family: 'Times New Roman', Times, serif;">
+        <div class="flex justify-between items-center px-5 py-4 max-w-full relative">
+            <!-- Logo -->
+            <div class="text-xl font-bold">
+                <a href="index.html" target="_blank">NOTHING (R)</a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="md:hidden">
+                <button id="mobile-menu-toggle" class="focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:block">
+                <ul class="flex items-center space-x-4">
+                    <li><a href="#" class="text-black hover:text-gray-700">Phone</a></li>
+                    <li><a href="#" class="text-black hover:text-gray-700">Audio</a></li>
+                    <li><a href="index.html" target="_blank" class="text-black hover:text-gray-700">Home</a></li>
+                    <li><a href="biodata.html" target="_blank" class="text-black hover:text-gray-700">Biodata</a></li>
+                    <li><a href="contact_us.html" target="_blank" class="text-black hover:text-gray-700">Contact Us</a></li>
+                    <li><a href="posts.html" target="_blank" class="text-black hover:text-gray-700">Posts (Additional)</a></li>
+                    <li><a href="biblecharacs.html" target="_blank" class="text-black hover:text-gray-700">Bible Characters (Free Page)</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Icons -->
+            <div class="flex items-center space-x-3 text-xl">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <i class="fa-regular fa-user"></i>
+            </div>
+        </div>
+    
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="md:hidden absolute top-full left-0 w-full bg-white shadow-lg hidden">
+            <ul class="flex flex-col">
+                <li class="border-b border-gray-200">
+                    <a href="#" class="block px-5 py-3 text-black hover:bg-gray-100">Phone</a>
+                </li>
+                <li class="border-b border-gray-200">
+                    <a href="#" class="block px-5 py-3 text-black hover:bg-gray-100">Audio</a>
+                </li>
+                <li class="border-b border-gray-200">
+                    <a href="index.html" target="_blank" class="block px-5 py-3 text-black hover:bg-gray-100">Home</a>
+                </li>
+                <li class="border-b border-gray-200">
+                    <a href="biodata.html" target="_blank" class="block px-5 py-3 text-black hover:bg-gray-100">Biodata</a>
+                </li>
+                <li class="border-b border-gray-200">
+                    <a href="contact_us.html" target="_blank" class="block px-5 py-3 text-black hover:bg-gray-100">Contact Us</a>
+                </li>
+                <li>
+                    <a href="talent.html" target="_blank" class="block px-5 py-3 text-black hover:bg-gray-100">Talent</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <script>
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+<main class="container-full bg-black px-4 pt-24 space-y-8">
+    <!-- Main Character Section -->
+    <section class="grid md:grid-cols-2 gap-8">
+        <!-- Main Character Image -->
+        <div class="flex flex-col justify-center items-center space-y-4">
+            <div class="w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white">
+                <img 
+                    src="Joseph-sold-into-slavery.jpg" 
+                    alt="Joseph" 
+                    class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                >
+            </div>
+            <!-- Additional Character Images -->
+            <div class="flex space-x-4">
+                <img 
+                    src="davidbible.jpeg" 
+                    alt="David" 
+                    class="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover border-2 border-white hover:scale-105 transition-transform"
+                >
+                <img 
+                    src="paulbible.jpg" 
+                    alt="Paul" 
+                    class="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover border-2 border-white hover:scale-105 transition-transform"
+                >
+                <img 
+                    src="mosesbible.jpeg" 
+                    alt="Moses" 
+                    class="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover border-2 border-white hover:scale-105 transition-transform"
+                >
+            </div>
+        </div>
+
+        <!-- Character Information -->
+        <div class="space-y-6">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white">My Favorite Bible Characters</h1>
+            
+            <div class="bg-white text-black p-6 rounded-lg shadow-xl">
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <h3 class="font-semibold text-gray-700">Joseph</h3>
+                        <p class="text-xl">Genesis</p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-700">David</h3>
+                        <p class="text-xl">1 Samuel, 2 Samuel, 1 Chronicles, and 2 Chronicles</p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-700">Paul</h3>
+                        <p class="text-xl">Acts</p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-700">Moses</h3>
+                        <p class="text-xl">Exodus and Deutronomy</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Character Lessons -->
+            <div class="bg-white text-black p-6 rounded-lg shadow-xl">
+                <h2 class="text-2xl font-semibold mb-4 text-black">Joseph: A Story of Resilience</h2>
+                
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>Trusting God in Adversity</li>
+                            <li>Maintaining Integrity</li>
+                            <li>Forgiveness</li>
+                            <li>Divine Timing</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Character Comparison Section -->
+    <section class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white text-black p-6 rounded-lg shadow-xl">
+            <h3 class="text-2xl font-semibold mb-4">David: Warrior & Worshipper</h3>
+            <ul class="list-disc list-inside space-y-2">
+                <li>Defeated Goliath</li>
+                <li>Wrote Most Psalms</li>
+                <li>King of Israel</li>
+                <li>Man After God's Heart</li>
+            </ul>
+        </div>
+        <div class="bg-white text-black p-6 rounded-lg shadow-xl">
+            <h3 class="text-2xl font-semibold mb-4">Paul: Apostle of Grace</h3>
+            <ul class="list-disc list-inside space-y-2">
+                <li>Wrote Most New Testament Books</li>
+                <li>Missionary Journeys</li>
+                <li>Transformed Persecutor</li>
+                <li>Theological Foundations</li>
+            </ul>
+        </div>
+        <div class="bg-white text-black p-6 rounded-lg shadow-xl">
+            <h3 class="text-2xl font-semibold mb-4">Moses: Deliverer</h3>
+            <ul class="list-disc list-inside space-y-2">
+                <li>Led Exodus</li>
+                <li>Received Ten Commandments</li>
+                <li>Spoke with God</li>
+                <li>Interceded for Israel</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Reflection Section -->
+    <section class="bg-white text-black p-8 rounded-lg shadow-xl">
+        <h2 class="text-3xl font-bold mb-6 text-black">Why These Characters Inspire Me</h2>
+        <div class="max-w-3xl mx-auto">
+            <blockquote class="italic text-xl text-gray-700 mb-6">
+                "These biblical heroes show me that with faith, perseverance, and God's guidance, ordinary people can do extraordinary things."
+            </blockquote>
+            <div class="flex items-center">
+                <div>
+                    <h3 class="font-semibold text-xl text-black">Personal Reflection</h3>
+                    <p class="text-gray-700">Their stories remind me that God can use anyone willing to trust and obey Him, regardless of past mistakes or current circumstances.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+<footer class="bg-black text-white py-12 px-16">
+    <div class="container mx-auto flex justify-between space-x-8">
+        <!-- Products Column -->
+        <div class="w-1/4">
+            <h2 class="text-xl font-semibold mb-4">Products</h2>
+            <ul class="space-y-2">
+                <li class="hover:text-gray-300 cursor-pointer">Phone (2a) Plus</li>
+                <li class="hover:text-gray-300 cursor-pointer">Phone (2a)</li>
+                <li class="hover:text-gray-300 cursor-pointer">Phone (2)</li>
+                <li class="hover:text-gray-300 cursor-pointer">Ear (a)</li>
+                <li class="hover:text-gray-300 cursor-pointer">Ear</li>
+                <li class="hover:text-gray-300 cursor-pointer">Accessories</li>
+                <li class="hover:text-gray-300 cursor-pointer">Apparel</li>
+            </ul>
+        </div>
+
+        <!-- Company Column -->
+        <div class="w-1/4">
+            <h2 class="text-xl font-semibold mb-4">Company</h2>
+            <ul class="space-y-2">
+                <li class="hover:text-gray-300 cursor-pointer">About Us</li>
+                <li class="hover:text-gray-300 cursor-pointer">Careers</li>
+                <li class="hover:text-gray-300 cursor-pointer">Community</li>
+                <li class="hover:text-gray-300 cursor-pointer">Sustainability</li>
+                <li class="hover:text-gray-300 cursor-pointer">Business Enquiry</li>
+                <li class="hover:text-gray-300 cursor-pointer">Press Contact</li>
+            </ul>
+        </div>
+
+        <!-- Support Column -->
+        <div class="w-1/4">
+            <h2 class="text-xl font-semibold mb-4">Support</h2>
+            <ul class="space-y-2">
+                <li class="hover:text-gray-300 cursor-pointer">Support Centre</li>
+                <li class="hover:text-gray-300 cursor-pointer">Contact Us</li>
+                <li class="hover:text-gray-300 cursor-pointer">Find a Store</li>
+                <li class="hover:text-gray-300 cursor-pointer">Security Vulnerability</li>
+                <li class="hover:text-gray-300 cursor-pointer">Report</li>
+            </ul>
+        </div>
+
+        <!-- Mailing List Column -->
+        <div class="w-1/4">
+            <h2 class="text-xl font-semibold mb-4">JOIN OUR MAILING LIST</h2>
+            <div class="border border-white rounded-lg">
+                <div class="flex">
+                    <input 
+                        type="email" 
+                        placeholder="Enter Address" 
+                        class="bg-black text-white p-3 w-full rounded-l-lg focus:outline-none"
+                    >
+                    <button class="bg-black text-white p-3 rounded-r-lg hover:bg-gray-800">
+                        →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="border-t border-gray-700 mt-8 pt-6">
+        <div class="container mx-auto px-4 md:px-0">
+            <!-- Mobile: Stacked layout -->
+            <div class="flex flex-col space-y-6 md:hidden">
+                <!-- Links Section -->
+                <div class="flex flex-col space-y-4 text-center">
+                    <a href="#" class="hover:text-gray-300">Privacy Policy</a>
+                    <a href="https://fti.unai.edu/" target="_blank" class="hover:text-gray-300">FTI UNAI</a>
+                    <a href="https://unai.edu/" target="_blank" class="hover:text-gray-300">UNAI Website</a>
+                    <a href="https://jurnal.unai.edu/index.php/teika" target="_blank" class="hover:text-gray-300">Jurnal Teika</a>
+                </div>
+    
+                <!-- Social Media Section -->
+                <div class="flex justify-center space-x-4">
+                    <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+    
+                <!-- Country Section -->
+                <div class="text-center">
+                    <a href="#" class="hover:text-gray-300">Indonesia</a>
+                </div>
+            </div>
+    
+            <!-- Desktop: Inline layout -->
+            <div class="hidden md:flex justify-between items-center">
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-gray-300">Privacy Policy</a>
+                    <a href="https://fti.unai.edu/" target="_blank" class="hover:text-gray-300">FTI UNAI</a>
+                    <a href="https://unai.edu/" target="_blank" class="hover:text-gray-300">UNAI Website</a>
+                    <a href="https://jurnal.unai.edu/index.php/teika" target="_blank" class="hover:text-gray-300">Jurnal Teika</a>
+                </div>
+    
+                <div class="flex space-x-4">
+                    <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+    
+                <div>
+                    <a href="#" class="hover:text-gray-300">Indonesia</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

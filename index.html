@@ -1,93 +1,437 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nothing</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Welcome to my Website</title>
+    <script src="https://kit.fontawesome.com/695ad4d856.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="favicon_nothiung.png">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'nothing-blue': '#00285c',
+                        'nothing-dark': '#111',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-
-    <header>
-        <div class="container mx-auto flex flex-row space-x-20 my-10 justify-between">
-            <div><img src="sirclo-store-1.png" alt=""></div>
-            <div>
-                <ul class="flex space-x-[70px]">
-                    <li><a href="a">Solusi</a></li>
-                    <li><a href="a">Harga</a></li>
-                    <li><a href="a">Template</a></li>
-                    <li><a href="a">Blog</a></li>
-                    <li><a href="a">Affiliate</a></li>
-                    <li><a href="a">Lainnya</a></li>
+<body class="m-0 p-0">
+    <header class="fixed top-0 w-full bg-white z-[1000] shadow-md" style="font-family: 'Times New Roman', Times, serif;">
+        <div class="flex justify-between items-center px-5 py-4 max-w-full relative">
+            <!-- Logo -->
+            <div class="text-xl font-bold">
+                <a href="index.html" target="_blank">NOTHING (R)</a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="md:hidden">
+                <button id="mobile-menu-toggle" class="focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:block">
+                <ul class="flex items-center space-x-4">
+                    <li><a href="#" class="text-black hover:text-gray-700">Phone</a></li>
+                    <li><a href="#" class="text-black hover:text-gray-700">Audio</a></li>
+                    <li><a href="index.html" target="_blank" class="text-black hover:text-gray-700">Home</a></li>
+                    <li><a href="biodata.html" target="_blank" class="text-black hover:text-gray-700">Biodata</a></li>
+                    <li><a href="contact_us.html" target="_blank" class="text-black hover:text-gray-700">Contact Us</a></li>
+                    <li><a href="posts.html" target="_blank" class="text-black hover:text-gray-700">Posts (Additional)</a></li>
+                    <li><a href="biblecharacs.html" target="_blank" class="text-black hover:text-gray-700">Bible Characters (Free Page)</a></li>
                 </ul>
+            </nav>
+            
+            <!-- Icons -->
+            <div class="flex items-center space-x-3 text-xl">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <i class="fa-regular fa-user"></i>
             </div>
-            <div class="flex space-x-[20px]">
-                <a class="bg-sky-800 text-white px-10 py-3 rounded-xl hover:bg-orange-400" href="a">Coba Gratis!</a>
-                <a class="text-cyan-500 border-solid border-2 px-10 py-3 rounded-xl border-cyan-500 hover:text-white hover:bg-sky-800" href="a">Login</a>
-            </div>
+        </div>
+    
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="md:hidden absolute top-full left-0 w-full bg-white shadow-lg hidden">
+            <ul class="flex flex-col">
+                <li class="border-b border-gray-200">
+                    <a href="#" class="block px-5 py-3 text-black hover:bg-gray-100">Phone</a>
+                </li>
+                <li class="border-b border-gray-200">
+                    <a href="#" class="block px-5 py-3 text-black hover:bg-gray-100">Audio</a>
+                </li>
+                <li class="border-b border-gray-200">
+                    <a href="index.html" target="_blank" class="block px-5 py-3 text-black hover:bg-gray-100">Home</a>
+                </li>
+                <li class="border-b border-gray-200">
+                    <a href="biodata.html" target="_blank" class="block px-5 py-3 text-black hover:bg-gray-100">Biodata</a>
+                </li>
+                <li class="border-b border-gray-200">
+                    <a href="contact_us.html" target="_blank" class="block px-5 py-3 text-black hover:bg-gray-100">Contact Us</a>
+                </li>
+                <li>
+                    <a href="talent.html" target="_blank" class="block px-5 py-3 text-black hover:bg-gray-100">Talent</a>
+                </li>
+            </ul>
         </div>
     </header>
+    
+    <script>
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 
-    <h1 class="font-bold text-center text-red-700 bg-yellow-400">WELOCOME TO MAHARAYATARA.MY.ID</h1>
-    <a class="font-bold" href="https://fti.unai.edu">FTI UNAI WEBSITE</a>
-
-    <div class="container mx-auto flex flex-col md:flex-row">
-        <div class="bg-blue-400 md:bg-yellow-600 basis-1/3">A</div>
-        <div class="bg-pink-400 md:bg-red-600 basis-1/3">B</div>
-        <div class="bg-green-400 md:bg-purple-600 basis-1/3">C</div>
+<section class="relative bg-black text-white overflow-hidden">
+    <div class="absolute inset-0 opacity-50">
+        
     </div>
-    <br>
-    <a class="bg-slate-900 text-white px-12 py-3 rounded-full " href="a">How to use? -></a>
-    <br>
-    <br>
+    
+    <div class="relative z-10 container mx-auto px-4 py-24 md:py-36 flex flex-col md:flex-row items-center">
+        <div class="w-full md:w-1/2 space-y-6 text-center md:text-left">
 
-    <div class="container mx-auto flex flex-row space-x-10">
-        <div class="basis-1/5">
-            <ul>
-                <li class="font-bold">SIRCLO STORE</li>
-                <li>Fitur</li>
-                <li>Template</li>
-                <li>Harga</li>
-                <li>Langganan Basic</li>
-                <li>Toko Online Gratis</li>
-            </ul>
-        </div>
-        <div class="basis-1/5">
-            <ul>
-                <li class="font-bold">SIRCLO STORE</li>
-                <li>Fitur</li>
-                <li>Template</li>
-                <li>Harga</li>
-                <li>Langganan Basic</li>
-                <li>Toko Online Gratis</li>
-            </ul>
-        </div>
-        <div class="basis-1/5"> 
-            <ul>
-            <li class="font-bold">SIRCLO STORE</li>
-            <li>Fitur</li>
-            <li>Template</li>
-            <li>Harga</li>
-            <li>Langganan Basic</li>
-            <li>Toko Online Gratis</li>
-        </ul></div>
-        <div class="basis-1/5">
-            <ul>
-                <li class="font-bold">SIRCLO STORE</li>
-                <li>Fitur</li>
-                <li>Template</li>
-                <li>Harga</li>
-                <li>Langganan Basic</li>
-                <li>Toko Online Gratis</li>
-            </ul>
-        </div>
-        <div class="basis-1/5">
-            <ul>
-                <li class="font-bold">MEDIA SOSIAL</li>
-                <img src="id_badge_web_generic.png" alt="" width="200px">
-                <img src="SIRCLO-Store-Mobile-Play-Store.png" alt="" width="200px">
-            </ul>
+            
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+                Nothing Phone
+                <br>
+                <span class="text-gray-300">Redefining Smartphone Experience</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-gray-300 max-w-xl">
+                Breakthrough design meets cutting-edge technology. 
+                Experience a smartphone that's not just a device, 
+                but an extension of your digital persona.
+            </p>
+            
+            <div class="flex space-x-4 justify-center md:justify-start">
+                <button class="bg-white text-black px-8 py-3 rounded-full hover:bg-gray-200 transition">
+                    Learn More
+                </button>
+                <button class="border border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-black transition">
+                    Pre-order Now
+                </button>
+            </div>
+            
+            <div class="flex items-center justify-center md:justify-start space-x-4 mt-6">
+                <div class="flex -space-x-4"></div>
+                <div class="text-sm text-gray-300">
+                    Loved by Tech Enthusiasts
+                </div>
+            </div>
         </div>
     </div>
-</body>
-</html>
+    
+    <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>
+</section>
+
+    <main class="bg-gray-100">
+        <div class="flex flex-col md:flex-row items-center w-full px-4 ">
+            <div class="w-full md:w-[80%] mb-6 md:mb-0">
+                <img src="flypic.webp" alt="Community Spirit" class="w-full object-cover">
+            </div>
+            <div class="w-full md:w-[30%] md:pl-10 text-center md:text-left">
+                <h1 class="text-3xl md:text-6xl mb-4 md:mb-6">Community Spirit</h1>
+                <p class="text-base md:text-xl mb-4 md:mb-6">The Phone (2a) Community Edition Project is wrapped and ready for launch. 
+                    Tune in to our next Update on 30 October at 11:00 GMT for the big reveal.</p>
+                <button class="bg-blue-900 text-white px-6 py-3 md:px-8 md:py-4 rounded-full w-full md:w-[400px] hover:bg-blue-800 transition-colors">
+                    Notify Me
+                </button>
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center w-full px-4 ">
+            <div class="w-full md:w-[80%] mb-6 md:mb-0">
+                <img src="8oct.webp" alt="Nothing OS 3.0" class="w-full object-cover">
+            </div>
+            <div class="w-full md:w-[30%] md:pl-10 text-center md:text-left">
+                <h1 class="text-3xl md:text-6xl mb-4 md:mb-6">Nothing OS 3.0</h1>
+                <p class="text-base md:text-xl mb-2 md:mb-4">Powered by Android 15. Open Beta is out now for Phone (2a).</p>
+                <p class="text-base md:text-xl mb-4 md:mb-6">General release: December 2024.</p>
+                <button class="bg-blue-900 text-white px-6 py-3 md:px-8 md:py-4 rounded-full w-full md:w-[400px] hover:bg-blue-800 transition-colors">
+                    Learn More
+                </button>
+            </div>
+        </div>
+
+
+        <div class="flex flex-col md:flex-row items-center w-full px-4 ">
+            <div class="w-full md:w-[80%] mb-6 md:mb-0">
+                <img src="dragonfly.webp" alt="Ear (open)" class="w-full object-cover">
+            </div>
+            <div class="w-full md:w-[30%] md:pl-10 text-center md:text-left">
+                <h1 class="text-3xl md:text-6xl mb-4 md:mb-6">Ear (open)</h1>
+                <p class="text-base md:text-xl mb-2 md:mb-4">(open) your world.</p>
+                <p class="text-base md:text-xl mb-4 md:mb-6">Discover a more present way to listen.</p>
+                <button class="bg-blue-900 text-white px-6 py-3 md:px-8 md:py-4 rounded-full w-full md:w-[400px] hover:bg-blue-800 transition-colors">
+                    Learn More
+                </button>
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center w-full px-4 ">
+            <div class="w-full md:w-[80%] mb-6 md:mb-0">
+                <img src="duophone.webp" alt="Phone (2a) Plus" class="w-full object-cover">
+            </div>
+            <div class="w-full md:w-[30%] md:pl-10 text-center md:text-left">
+                <h1 class="text-3xl md:text-6xl mb-4 md:mb-6">Phone (2a) Plus</h1>
+                <p class="text-base md:text-xl mb-2 md:mb-4">Extra power, extra pixels, extra unique.</p>
+                <p class="text-base md:text-xl mb-2 md:mb-4">Extraordinary.</p>
+                <p class="text-base md:text-xl mb-4 md:mb-6">Phone (2a) Plus is coming soon.</p>
+                <button class="bg-blue-900 text-white px-6 py-3 md:px-8 md:py-4 rounded-full w-full md:w-[400px] hover:bg-blue-800 transition-colors">
+                    Learn More
+                </button>
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center w-full px-4 ">
+            <div class="w-full md:w-[80%] mb-6 md:mb-0">
+                <img src="triovariety.webp" alt="CMF by Nothing" class="w-full object-cover">
+            </div>
+            <div class="w-full md:w-[30%] md:pl-10 text-center md:text-left">
+                <h1 class="text-3xl md:text-6xl mb-4 md:mb-6">CMF by Nothing</h1>
+                <p class="text-base md:text-xl mb-2 md:mb-4">Wonderful by design.</p>
+                <p class="text-base md:text-xl mb-4 md:mb-6">Say hello to CMF Phone 1, Watch Pro 2 and Buds Pro 2.</p>
+                <button class="bg-blue-900 text-white px-6 py-3 md:px-8 md:py-4 rounded-full w-full md:w-[400px] hover:bg-blue-800 transition-colors">
+                    Learn More
+                </button>
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center w-full px-4">
+            <div class="w-full md:w-[80%] mb-6 md:mb-0">
+                <img src="solofacedown.webp" alt="Phone (2a) Special Edition" class="w-full object-cover">
+            </div>
+            <div class="w-full md:w-[30%] md:pl-10 text-center md:text-left">
+                <h1 class="text-3xl md:text-6xl mb-4 md:mb-6">Phone (2a) Special Edition</h1>
+                <p class="text-base md:text-xl mb-4 md:mb-6">A story of colour, told through our most powerfully unique smartphone yet.</p>
+                <button class="bg-blue-900 text-white px-6 py-3 md:px-8 md:py-4 rounded-full w-full md:w-[400px] hover:bg-blue-800 transition-colors">
+                    Learn More
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row items-center w-full px-4 ">
+        <div class="w-full md:w-[80%] mb-6 md:mb-0">
+            <img src="diamondearphones.webp" alt="Ear" class="w-full object-cover">
+        </div>
+        <div class="w-full md:w-[30%] md:pl-10 text-center md:text-left">
+            <h1 class="text-3xl md:text-6xl mb-4 md:mb-6">Ear</h1>
+            <p class="text-base md:text-xl mb-2 md:mb-4">Sound, evolved.</p>
+            <p class="text-base md:text-xl mb-4 md:mb-6">Our best-ever audio experience.</p>
+            <button class="bg-blue-900 text-white px-6 py-3 md:px-8 md:py-4 rounded-full w-full md:w-[400px] hover:bg-blue-800 transition-colors">
+                Learn More
+            </button>
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row items-center w-full px-4 ">
+        <div class="w-full md:w-[80%] mb-6 md:mb-0">
+            <img src="yellowfrog.webp" alt="Ear (a)" class="w-full object-cover">
+        </div>
+        <div class="w-full md:w-[30%] md:pl-10 text-center md:text-left">
+            <h1 class="text-3xl md:text-6xl mb-4 md:mb-6">Ear (a)</h1>
+            <p class="text-base md:text-xl mb-2 md:mb-4">Let's play.</p>
+            <p class="text-base md:text-xl mb-4 md:mb-6">Made for every part of every day.</p>
+            <button class="bg-blue-900 text-white px-6 py-3 md:px-8 md:py-4 rounded-full w-full md:w-[400px] hover:bg-blue-800 transition-colors">
+                Learn More
+            </button>
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row items-center w-full px-4 ">
+        <div class="w-full md:w-[80%] mb-6 md:mb-0">
+            <img src="curvedshadow.webp" alt="Phone (2a)" class="w-full object-cover">
+        </div>
+        <div class="w-full md:w-[30%] md:pl-10 text-center md:text-left">
+            <h1 class="text-3xl md:text-6xl mb-4 md:mb-6">Phone (2a)</h1>
+            <p class="text-base md:text-xl mb-2 md:mb-4">A new icon is born.</p>
+            <p class="text-base md:text-xl mb-4 md:mb-6">Powerfully unique from the inside out.</p>
+            <button class="bg-blue-900 text-white px-6 py-3 md:px-8 md:py-4 rounded-full w-full md:w-[400px] hover:bg-blue-800 transition-colors">
+                Learn More
+            </button>
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row items-center w-full px-4 ">
+        <div class="w-full md:w-[80%] mb-6 md:mb-0">
+            <img src="circleshadowsolo.webp" alt="Glyph Developer Kit" class="w-full object-cover">
+        </div>
+        <div class="w-full md:w-[30%] md:pl-10 text-center md:text-left">
+            <h1 class="text-3xl md:text-6xl mb-4 md:mb-6">Glyph Developer Kit</h1>
+            <p class="text-base md:text-xl mb-2 md:mb-4">Introducing the Glyph Developer Kit. 
+                Your opportunity to integrate apps with the iconic Glyph Interface.</p>
+            <p class="text-base md:text-xl mb-4 md:mb-6">API key registration is now open.</p>
+            <button class="bg-blue-900 text-white px-6 py-3 md:px-8 md:py-4 rounded-full w-full md:w-[400px] hover:bg-blue-800 transition-colors">
+                Learn More
+            </button>
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row items-center w-full px-4 ">
+        <div class="w-full md:w-[80%] mb-6 md:mb-0">
+            <img src="octopustentacles.webp" alt="Phone (2)" class="w-full object-cover">
+        </div>
+        <div class="w-full md:w-[30%] md:pl-10 text-center md:text-left">
+            <h1 class="text-3xl md:text-6xl mb-4 md:mb-6">Phone (2)</h1>
+            <p class="text-base md:text-xl mb-4 md:mb-6">A new era. Where iconic design meets premium performance.</p>
+            <p class="text-base md:text-xl mb-4 md:mb-6">Come to the bright side.</p>
+            <p class="text-base md:text-xl mb-4 md:mb-6">Phone (2) available in select drops on 15 July 2023.</p>
+            <button class="bg-blue-900 text-white px-6 py-3 md:px-8 md:py-4 rounded-full w-full md:w-[400px] hover:bg-blue-800 transition-colors">
+                Learn More
+            </button>
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-around text-center py-24"> <!-- Added py-16 for vertical padding -->
+        <div class="mb-6 md:mb-0">
+            <h2 class="text-2xl font-bold mb-2">Wallpaper*</h2>
+            <p class="text-base">"A radical reinterpretation of mobile tech"</p>
+        </div>
+        <div class="mb-6 md:mb-0">
+            <h2 class="text-2xl font-bold mb-2">Highsnobiety</h2>
+            <p class="text-base">"Boundary-pushing aesthetics"</p>
+        </div>
+        <div>
+            <h2 class="text-2xl font-bold mb-2">GQ</h2>
+            <p class="text-base">"The most hyped tech company in years"</p>
+        </div>
+    </div>
+    </main>
+
+    <footer class="bg-black text-white py-12 px-16">
+        <div class="container mx-auto flex justify-between space-x-8">
+            <!-- Products Column -->
+            <div class="w-1/4">
+                <h2 class="text-xl font-semibold mb-4">Products</h2>
+                <ul class="space-y-2">
+                    <li class="hover:text-gray-300 cursor-pointer">Phone (2a) Plus</li>
+                    <li class="hover:text-gray-300 cursor-pointer">Phone (2a)</li>
+                    <li class="hover:text-gray-300 cursor-pointer">Phone (2)</li>
+                    <li class="hover:text-gray-300 cursor-pointer">Ear (a)</li>
+                    <li class="hover:text-gray-300 cursor-pointer">Ear</li>
+                    <li class="hover:text-gray-300 cursor-pointer">Accessories</li>
+                    <li class="hover:text-gray-300 cursor-pointer">Apparel</li>
+                </ul>
+            </div>
+    
+            <!-- Company Column -->
+            <div class="w-1/4">
+                <h2 class="text-xl font-semibold mb-4">Company</h2>
+                <ul class="space-y-2">
+                    <li class="hover:text-gray-300 cursor-pointer">About Us</li>
+                    <li class="hover:text-gray-300 cursor-pointer">Careers</li>
+                    <li class="hover:text-gray-300 cursor-pointer">Community</li>
+                    <li class="hover:text-gray-300 cursor-pointer">Sustainability</li>
+                    <li class="hover:text-gray-300 cursor-pointer">Business Enquiry</li>
+                    <li class="hover:text-gray-300 cursor-pointer">Press Contact</li>
+                </ul>
+            </div>
+    
+            <!-- Support Column -->
+            <div class="w-1/4">
+                <h2 class="text-xl font-semibold mb-4">Support</h2>
+                <ul class="space-y-2">
+                    <li class="hover:text-gray-300 cursor-pointer">Support Centre</li>
+                    <li class="hover:text-gray-300 cursor-pointer">Contact Us</li>
+                    <li class="hover:text-gray-300 cursor-pointer">Find a Store</li>
+                    <li class="hover:text-gray-300 cursor-pointer">Security Vulnerability</li>
+                    <li class="hover:text-gray-300 cursor-pointer">Report</li>
+                </ul>
+            </div>
+    
+            <!-- Mailing List Column -->
+            <div class="w-1/4">
+                <h2 class="text-xl font-semibold mb-4">JOIN OUR MAILING LIST</h2>
+                <div class="border border-white rounded-lg">
+                    <div class="flex">
+                        <input 
+                            type="email" 
+                            placeholder="Enter Address" 
+                            class="bg-black text-white p-3 w-full rounded-l-lg focus:outline-none"
+                        >
+                        <button class="bg-black text-white p-3 rounded-r-lg hover:bg-gray-800">
+                            →
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="border-t border-gray-700 mt-8 pt-6">
+            <div class="container mx-auto px-4 md:px-0">
+                <!-- Mobile: Stacked layout -->
+                <div class="flex flex-col space-y-6 md:hidden">
+                    <!-- Links Section -->
+                    <div class="flex flex-col space-y-4 text-center">
+                        <a href="#" class="hover:text-gray-300">Privacy Policy</a>
+                        <a href="https://fti.unai.edu/" target="_blank" class="hover:text-gray-300">FTI UNAI</a>
+                        <a href="https://unai.edu/" target="_blank" class="hover:text-gray-300">UNAI Website</a>
+                        <a href="https://jurnal.unai.edu/index.php/teika" target="_blank" class="hover:text-gray-300">Jurnal Teika</a>
+                    </div>
+        
+                    <!-- Social Media Section -->
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+        
+                    <!-- Country Section -->
+                    <div class="text-center">
+                        <a href="#" class="hover:text-gray-300">Indonesia</a>
+                    </div>
+                </div>
+        
+                <!-- Desktop: Inline layout -->
+                <div class="hidden md:flex justify-between items-center">
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-gray-300">Privacy Policy</a>
+                        <a href="https://fti.unai.edu/" target="_blank" class="hover:text-gray-300">FTI UNAI</a>
+                        <a href="https://unai.edu/" target="_blank" class="hover:text-gray-300">UNAI Website</a>
+                        <a href="https://jurnal.unai.edu/index.php/teika" target="_blank" class="hover:text-gray-300">Jurnal Teika</a>
+                    </div>
+        
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+        
+                    <div>
+                        <a href="#" class="hover:text-gray-300">Indonesia</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us Final</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/695ad4d856.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="favicon_nothiung.png">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'nothing-blue': '#00285c',
+                        'nothing-dark': '#111',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="m-0 p-0">
+    <header class="fixed top-0 w-full bg-white z-[1000] shadow-md" style="font-family: 'Times New Roman', Times, serif;">
+        <div class="flex justify-between items-center px-5 py-4 max-w-full relative">
+            <!-- Logo -->
+            <div class="text-xl font-bold">
+                <a href="index.html" target="_blank">NOTHING (R)</a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="md:hidden">
+                <button id="mobile-menu-toggle" class="focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:block">
+                <ul class="flex items-center space-x-4">
+                    <li><a href="#" class="text-black hover:text-gray-700">Phone</a></li>
+                    <li><a href="#" class="text-black hover:text-gray-700">Audio</a></li>
+                    <li><a href="index.html" target="_blank" class="text-black hover:text-gray-700">Home</a></li>
+                    <li><a href="biodata.html" target="_blank" class="text-black hover:text-gray-700">Biodata</a></li>
+                    <li><a href="contact_us.html" target="_blank" class="text-black hover:text-gray-700">Contact Us</a></li>
+                    <li><a href="posts.html" target="_blank" class="text-black hover:text-gray-700">Posts (Additional)</a></li>
+                    <li><a href="biblecharacs.html" target="_blank" class="text-black hover:text-gray-700">Bible Characters (Free Page)</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Icons -->
+            <div class="flex items-center space-x-3 text-xl">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <i class="fa-regular fa-user"></i>
+            </div>
+        </div>
+    
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="md:hidden absolute top-full left-0 w-full bg-white shadow-lg hidden">
+            <ul class="flex flex-col">
+                <li class="border-b border-gray-200">
+                    <a href="#" class="block px-5 py-3 text-black hover:bg-gray-100">Phone</a>
+                </li>
+                <li class="border-b border-gray-200">
+                    <a href="#" class="block px-5 py-3 text-black hover:bg-gray-100">Audio</a>
+                </li>
+                <li class="border-b border-gray-200">
+                    <a href="index.html" target="_blank" class="block px-5 py-3 text-black hover:bg-gray-100">Home</a>
+                </li>
+                <li class="border-b border-gray-200">
+                    <a href="biodata.html" target="_blank" class="block px-5 py-3 text-black hover:bg-gray-100">Biodata</a>
+                </li>
+                <li class="border-b border-gray-200">
+                    <a href="contact_us.html" target="_blank" class="block px-5 py-3 text-black hover:bg-gray-100">Contact Us</a>
+                </li>
+                <li>
+                    <a href="talent.html" target="_blank" class="block px-5 py-3 text-black hover:bg-gray-100">Talent</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <script>
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+<main class="container mx-auto px-4 pt-24 bg-black space-y-8">
+    <!-- Registration Form Section -->
+    <section class="bg-white text-black p-8 rounded-lg shadow-xl">
+        <h1 class="text-4xl font-bold mb-8 text-center">Student Registration Form</h1>
+        
+        <form id="registrationForm" class="space-y-6">
+            <!-- Full Name and Student ID -->
+            <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                    <label class="block mb-2 font-semibold">Full Name</label>
+                    <input 
+                        type="text" 
+                        name="fullName" 
+                        required 
+                        class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        placeholder="Enter your full name"
+                    >
+                </div>
+                <div>
+                    <label class="block mb-2 font-semibold">Student ID (NIM)</label>
+                    <input 
+                        type="text" 
+                        name="studentId" 
+                        required 
+                        class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        placeholder="Enter your student ID"
+                    >
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                    <label class="block mb-2 font-semibold">Email Address</label>
+                    <input 
+                        type="email" 
+                        name="email" 
+                        required 
+                        class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        placeholder="Enter your email"
+                    >
+                </div>
+                <div>
+                    <label class="block mb-2 font-semibold">Phone Number</label>
+                    <input 
+                        type="tel" 
+                        name="phone" 
+                        required 
+                        class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        placeholder="Enter your phone number"
+                    >
+                </div>
+            </div>
+
+            <!-- Academic Information -->
+            <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                    <label class="block mb-2 font-semibold">Faculty/Major</label>
+                    <select 
+                        name="faculty" 
+                        required 
+                        class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    >
+                        <option value="">Select Faculty</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="business">Business</option>
+                        <option value="arts">Arts</option>
+                        <option value="science">Science</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block mb-2 font-semibold">Date of Birth</label>
+                    <input 
+                        type="date" 
+                        name="dob" 
+                        required 
+                        class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    >
+                </div>
+            </div>
+
+            <!-- Personal Details -->
+            <div>
+                <label class="block mb-2 font-semibold">Gender</label>
+                <div class="flex space-x-4">
+                    <label class="flex items-center">
+                        <input 
+                            type="radio" 
+                            name="gender" 
+                            value="male" 
+                            required 
+                            class="mr-2"
+                        >
+                        Male
+                    </label>
+                    <label class="flex items-center">
+                        <input 
+                            type="radio" 
+                            name="gender" 
+                            value="female" 
+                            required 
+                            class="mr-2"
+                        >
+                        Female
+                    </label>
+                </div>
+            </div>
+
+            <!-- Address -->
+            <div>
+                <label class="block mb-2 font-semibold">Address</label>
+                <textarea 
+                    name="address" 
+                    required 
+                    class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    placeholder="Enter your full address"
+                    rows="4"
+                ></textarea>
+            </div>
+
+            <!-- Additional Information Section -->
+            <section class="bg-gray-100 p-6 rounded-lg mt-6">
+                <h2 class="text-2xl font-semibold mb-4">Additional Details</h2>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block mb-2 font-semibold">Preferred Communication</label>
+                        <div class="flex space-x-4">
+                            <label class="flex items-center">
+                                <input 
+                                    type="checkbox" 
+                                    name="communication" 
+                                    value="email" 
+                                    class="mr-2"
+                                >
+                                Email
+                            </label>
+                            <label class="flex items-center">
+                                <input 
+                                    type="checkbox" 
+                                    name="communication" 
+                                    value="phone" 
+                                    class="mr-2"
+                                >
+                                Phone
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block mb-2 font-semibold">Emergency Contact</label>
+                        <input 
+                            type="tel" 
+                            name="emergencyContact" 
+                            class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="Emergency contact number"
+                        >
+                    </div>
+                </div>
+            </section>
+
+            <!-- Submit Button -->
+            <div class="text-center mt-6">
+                <button 
+                    type="submit" 
+                    class="bg-blue-600 text-white px-12 py-3 rounded-full hover:bg-blue-700 transition duration-300 text-lg"
+                >
+                    Submit Registration
+             </button>
+            </div>
+        </form>
+    </section>
+</main>
+
+<!-- JavaScript Validation -->
+<script>
+    document.getElementById('registrationForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Validation Variables
+        const fullName = document.querySelector('input[name="fullName"]');
+        const studentId = document.querySelector('input[name="studentId"]');
+        const email = document.querySelector('input[name="email"]');
+        const phone = document.querySelector('input[name="phone"]');
+        const faculty = document.querySelector('select[name="faculty"]');
+        const dob = document.querySelector('input[name="dob"]');
+        const gender = document.querySelector('input[name="gender"]:checked');
+        const address = document.querySelector('textarea[name="address"]');
+
+        // Email Regex Validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        
+        // Phone Number Validation (10-12 digits)
+        const phoneRegex = /^\d{10,12}$/;
+
+        // Validation Checks
+        if (!fullName.value.trim()) {
+            alert('Please enter your full name');
+            fullName.focus();
+            return;
+        }
+
+        if (!studentId.value.trim()) {
+            alert('Please enter your Student ID');
+            studentId.focus();
+            return;
+        }
+
+        if (!emailRegex.test(email.value)) {
+            alert('Please enter a valid email address');
+            email.focus();
+            return;
+        }
+
+        if (!phoneRegex.test(phone.value)) {
+            alert('Please enter a valid phone number (10-12 digits)');
+            phone.focus();
+            return;
+        }
+
+        if (faculty.value === '') {
+            alert('Please select your faculty');
+            faculty.focus();
+            return;
+        }
+
+        if (!dob.value) {
+            alert('Please enter your date of birth');
+            dob.focus();
+            return;
+        }
+
+        if (!gender) {
+            alert('Please select your gender');
+            return;
+        }
+
+        if (!address.value.trim()) {
+            alert('Please enter your address');
+            address.focus();
+            return;
+        }
+
+        // Clear the form upon successful submission
+        document.getElementById('registrationForm').reset();
+        alert('Registration successful!');
+    });
+</script>
+
+
+
+<footer class="bg-black text-white py-12 px-16">
+    <div class="container mx-auto flex justify-between space-x-8">
+        <!-- Products Column -->
+        <div class="w-1/4">
+            <h2 class="text-xl font-semibold mb-4">Products</h2>
+            <ul class="space-y-2">
+                <li class="hover:text-gray-300 cursor-pointer">Phone (2a) Plus</li>
+                <li class="hover:text-gray-300 cursor-pointer">Phone (2a)</li>
+                <li class="hover:text-gray-300 cursor-pointer">Phone (2)</li>
+                <li class="hover:text-gray-300 cursor-pointer">Ear (a)</li>
+                <li class="hover:text-gray-300 cursor-pointer">Ear</li>
+                <li class="hover:text-gray-300 cursor-pointer">Accessories</li>
+                <li class="hover:text-gray-300 cursor-pointer">Apparel</li>
+            </ul>
+        </div>
+
+        <!-- Company Column -->
+        <div class="w-1/4">
+            <h2 class="text-xl font-semibold mb-4">Company</h2>
+            <ul class="space-y-2">
+                <li class="hover:text-gray-300 cursor-pointer">About Us</li>
+                <li class="hover:text-gray-300 cursor-pointer">Careers</li>
+                <li class="hover:text-gray-300 cursor-pointer">Community</li>
+                <li class="hover:text-gray-300 cursor-pointer">Sustainability</li>
+                <li class="hover:text-gray-300 cursor-pointer">Business Enquiry</li>
+                <li class="hover:text-gray-300 cursor-pointer">Press Contact</li>
+            </ul>
+        </div>
+
+        <!-- Support Column -->
+        <div class="w-1/4">
+            <h2 class="text-xl font-semibold mb-4">Support</h2>
+            <ul class="space-y-2">
+                <li class="hover:text-gray-300 cursor-pointer">Support Centre</li>
+                <li class="hover:text-gray-300 cursor-pointer">Contact Us</li>
+                <li class="hover:text-gray-300 cursor-pointer">Find a Store</li>
+                <li class="hover:text-gray-300 cursor-pointer">Security Vulnerability</li>
+                <li class="hover:text-gray-300 cursor-pointer">Report</li>
+            </ul>
+        </div>
+
+        <!-- Mailing List Column -->
+        <div class="w-1/4">
+            <h2 class="text-xl font-semibold mb-4">JOIN OUR MAILING LIST</h2>
+            <div class="border border-white rounded-lg">
+                <div class="flex">
+                    <input 
+                        type="email" 
+                        placeholder="Enter Address" 
+                        class="bg-black text-white p-3 w-full rounded-l-lg focus:outline-none"
+                    >
+                    <button class="bg-black text-white p-3 rounded-r-lg hover:bg-gray-800">
+                        →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="border-t border-gray-700 mt-8 pt-6">
+        <div class="container mx-auto px-4 md:px-0">
+            <!-- Mobile: Stacked layout -->
+            <div class="flex flex-col space-y-6 md:hidden">
+                <!-- Links Section -->
+                <div class="flex flex-col space-y-4 text-center">
+                    <a href="#" class="hover:text-gray-300">Privacy Policy</a>
+                    <a href="https://fti.unai.edu/" target="_blank" class="hover:text-gray-300">FTI UNAI</a>
+                    <a href="https://unai.edu/" target="_blank" class="hover:text-gray-300">UNAI Website</a>
+                    <a href="https://jurnal.unai.edu/index.php/teika" target="_blank" class="hover:text-gray-300">Jurnal Teika</a>
+                </div>
+    
+                <!-- Social Media Section -->
+                <div class="flex justify-center space-x-4">
+                    <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+    
+                <!-- Country Section -->
+                <div class="text-center">
+                    <a href="#" class="hover:text-gray-300">Indonesia</a>
+                </div>
+            </div>
+    
+            <!-- Desktop: Inline layout -->
+            <div class="hidden md:flex justify-between items-center">
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-gray-300">Privacy Policy</a>
+                    <a href="https://fti.unai.edu/" target="_blank" class="hover:text-gray-300">FTI UNAI</a>
+                    <a href="https://unai.edu/" target="_blank" class="hover:text-gray-300">UNAI Website</a>
+                    <a href="https://jurnal.unai.edu/index.php/teika" target="_blank" class="hover:text-gray-300">Jurnal Teika</a>
+                </div>
+    
+                <div class="flex space-x-4">
+                    <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="#" class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+    
+                <div>
+                    <a href="#" class="hover:text-gray-300">Indonesia</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
