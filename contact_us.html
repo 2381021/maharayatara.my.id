@@ -20,7 +20,7 @@
     </script>
 </head>
 <body class="m-0 p-0">
-    <header class="fixed top-0 w-full bg-white z-[1000] shadow-md" style="font-family: 'Times New Roman', Times, serif;">
+    <header class="top-0 w-full bg-white z-[1000] shadow-md" style="font-family: 'Times New Roman', Times, serif;">
         <div class="flex justify-between items-center px-5 py-4 max-w-full relative">
             <!-- Logo -->
             <div class="text-xl font-bold">
@@ -45,7 +45,7 @@
                     <li><a href="biodata.html" target="_blank" class="text-black hover:text-gray-700">Biodata</a></li>
                     <li><a href="contact_us.html" target="_blank" class="text-black hover:text-gray-700">Contact Us</a></li>
                     <li><a href="posts.html" target="_blank" class="text-black hover:text-gray-700">Posts (Additional)</a></li>
-                    <li><a href="biblecharacs.html" target="_blank" class="text-black hover:text-gray-700">Bible Characters (Free Page)</a></li>
+                    <li><a href="freepage.html" target="_blank" class="text-black hover:text-gray-700">Bible Characters (Free Page)</a></li>
                 </ul>
             </nav>
             
@@ -56,36 +56,40 @@
             </div>
         </div>
     
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="md:hidden absolute top-full left-0 w-full bg-white shadow-lg hidden">
-            <ul class="flex flex-col">
-                <li class="border-b border-gray-200">
-                    <a href="#" class="block px-5 py-3 text-black hover:bg-gray-100">Phone</a>
-                </li>
-                <li class="border-b border-gray-200">
-                    <a href="#" class="block px-5 py-3 text-black hover:bg-gray-100">Audio</a>
-                </li>
-                <li class="border-b border-gray-200">
-                    <a href="index.html" target="_blank" class="block px-5 py-3 text-black hover:bg-gray-100">Home</a>
-                </li>
-                <li class="border-b border-gray-200">
-                    <a href="biodata.html" target="_blank" class="block px-5 py-3 text-black hover:bg-gray-100">Biodata</a>
-                </li>
-                <li class="border-b border-gray-200">
-                    <a href="contact_us.html" target="_blank" class="block px-5 py-3 text-black hover:bg-gray-100">Contact Us</a>
-                </li>
-                <li>
-                    <a href="talent.html" target="_blank" class="block px-5 py-3 text-black hover:bg-gray-100">Talent</a>
-                </li>
-            </ul>
-        </div>
-    </header>
-    <script>
-        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
+       <!-- Mobile Menu Dropdown -->
+       <div id="mobile-menu" class="md:hidden top-full left-0 w-full bg-white shadow-lg hidden">
+        <ul class="flex flex-col">
+            <li class="border-b border-gray-200">
+                <a href="#" class="block px-5 py-3 text-black hover:bg-gray-100">Phone</a>
+            </li>
+            <li class="border-b border-gray-200">
+                <a href="#" class="block px-5 py-3 text-black hover:bg-gray-100">Audio</a>
+            </li>
+            <li class="border-b border-gray-200">
+                <a href="index.html" target="_blank" class="block px-5 py-3 text-black hover:bg-gray-100">Home</a>
+            </li>
+            <li class="border-b border-gray-200">
+                <a href="biodata.html" target="_blank" class="block px-5 py-3 text-black hover:bg-gray-100">Biodata</a>
+            </li>
+            <li class="border-b border-gray-200">
+                <a href="contact_us.html" target="_blank" class="block px-5 py-3 text-black hover:bg-gray-100">Contact Us</a>
+            </li>
+            <li class="border-b border-gray-200">
+                <a href="posts.html" target="_blank" class="block px-5 py-3 text-black hover:bg-gray-100">Additional</a>
+            </li>
+            <li class="border-b border-gray-200">
+                <a href="freepage.html" target="_blank" class="block px-5 py-3 text-black hover:bg-gray-100">Free Content</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<script>
+    document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
 
 <main class="container mx-auto px-4 pt-24 bg-black space-y-8">
     <!-- Registration Form Section -->
@@ -336,49 +340,10 @@
 
 
 
-<footer class="bg-black text-white py-12 px-16">
-    <div class="container mx-auto flex justify-between space-x-8">
-        <!-- Products Column -->
-        <div class="w-1/4">
-            <h2 class="text-xl font-semibold mb-4">Products</h2>
-            <ul class="space-y-2">
-                <li class="hover:text-gray-300 cursor-pointer">Phone (2a) Plus</li>
-                <li class="hover:text-gray-300 cursor-pointer">Phone (2a)</li>
-                <li class="hover:text-gray-300 cursor-pointer">Phone (2)</li>
-                <li class="hover:text-gray-300 cursor-pointer">Ear (a)</li>
-                <li class="hover:text-gray-300 cursor-pointer">Ear</li>
-                <li class="hover:text-gray-300 cursor-pointer">Accessories</li>
-                <li class="hover:text-gray-300 cursor-pointer">Apparel</li>
-            </ul>
-        </div>
-
-        <!-- Company Column -->
-        <div class="w-1/4">
-            <h2 class="text-xl font-semibold mb-4">Company</h2>
-            <ul class="space-y-2">
-                <li class="hover:text-gray-300 cursor-pointer">About Us</li>
-                <li class="hover:text-gray-300 cursor-pointer">Careers</li>
-                <li class="hover:text-gray-300 cursor-pointer">Community</li>
-                <li class="hover:text-gray-300 cursor-pointer">Sustainability</li>
-                <li class="hover:text-gray-300 cursor-pointer">Business Enquiry</li>
-                <li class="hover:text-gray-300 cursor-pointer">Press Contact</li>
-            </ul>
-        </div>
-
-        <!-- Support Column -->
-        <div class="w-1/4">
-            <h2 class="text-xl font-semibold mb-4">Support</h2>
-            <ul class="space-y-2">
-                <li class="hover:text-gray-300 cursor-pointer">Support Centre</li>
-                <li class="hover:text-gray-300 cursor-pointer">Contact Us</li>
-                <li class="hover:text-gray-300 cursor-pointer">Find a Store</li>
-                <li class="hover:text-gray-300 cursor-pointer">Security Vulnerability</li>
-                <li class="hover:text-gray-300 cursor-pointer">Report</li>
-            </ul>
-        </div>
-
-        <!-- Mailing List Column -->
-        <div class="w-1/4">
+<footer class="w-full bg-black text-white py-12 px-16">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between space-x-8">
+        <!-- Mailing List Column (Moved to the top for mobile view) -->
+        <div class="w-full md:w-1/4 mb-6 md:mb-0">
             <h2 class="text-xl font-semibold mb-4">JOIN OUR MAILING LIST</h2>
             <div class="border border-white rounded-lg">
                 <div class="flex">
@@ -392,6 +357,45 @@
                     </button>
                 </div>
             </div>
+        </div>
+
+        <!-- Products Column -->
+        <div class="w-full md:w-1/4 mb-6 md:mb-0">
+            <h2 class="text-xl font-semibold mb-4">Products</h2>
+            <ul class="space-y-2">
+                <li class="hover:text-gray-300 cursor-pointer">Phone (2a) Plus</li>
+                <li class="hover:text-gray-300 cursor-pointer">Phone (2a)</li>
+                <li class="hover:text-gray-300 cursor-pointer">Phone (2)</li>
+                <li class="hover:text-gray-300 cursor-pointer">Ear (a)</li>
+                <li class="hover:text-gray-300 cursor-pointer">Ear</li>
+                <li class="hover:text-gray-300 cursor-pointer">Accessories</li>
+                <li class="hover:text-gray-300 cursor-pointer">Apparel</li>
+            </ul>
+        </div>
+
+        <!-- Company Column -->
+        <div class="w-full md:w-1/4 mb-6 md:mb-0">
+            <h2 class="text-xl font-semibold mb-4">Company</h2>
+            <ul class="space-y-2">
+                <li class="hover:text-gray-300 cursor-pointer">About Us</li>
+                <li class="hover:text-gray-300 cursor-pointer">Careers</li>
+                <li class="hover:text-gray-300 cursor-pointer">Community</li>
+                <li class="hover:text-gray-300 cursor-pointer">Sustainability</li>
+                <li class="hover:text-gray-300 cursor-pointer">Business Enquiry</li>
+                <li class="hover:text-gray-300 cursor-pointer">Press Contact</li>
+            </ul>
+        </div>
+
+        <!-- Support Column -->
+        <div class="w-full md:w-1/4 mb-6 md:mb-0">
+            <h2 class="text-xl font-semibold mb-4">Support</h2>
+            <ul class="space-y-2">
+                <li class="hover:text-gray-300 cursor-pointer">Support Centre</li>
+                <li class="hover:text-gray-300 cursor-pointer">Contact Us</li>
+                <li class="hover:text-gray-300 cursor-pointer">Find a Store</li>
+                <li class="hover:text-gray-300 cursor-pointer">Security Vulnerability</li>
+                <li class="hover:text-gray-300 cursor-pointer">Report</li>
+            </ul>
         </div>
     </div>
 
